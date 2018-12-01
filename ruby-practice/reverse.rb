@@ -9,3 +9,7 @@ def reverse(string)
     return abc
 end
 
+#Testing for the match to see if it works
+
+puts('reverse("abc") == "cba": ' + (reverse("abc") == "cba").to_s)
+#prints out "abc"=="cba" : true
