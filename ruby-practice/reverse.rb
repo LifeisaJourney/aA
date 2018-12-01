@@ -21,3 +21,5 @@ puts('reverse("abc") == "cba": ' + (reverse("abc") == "cba").to_s)
 #prints out "abc"=="cba" : true
 puts('reverse("a") == "a": ' + (reverse("a") == "a").to_s)
 #prints out "a" == "a" : true
+puts('reverse("I am a happy pet") == "tep yppah a ma I": ' + (reverse("I am a happy pet") == "tep yppah a ma I").to_s)
+#prints out "I am a happy pet" == "tep yppah a ma I" : true
