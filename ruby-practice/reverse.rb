@@ -3,11 +3,12 @@
 # return the word based on while loop
 # store the returned values back into an empty string
 def reverse(word)
-    i = word.length - 1
+    i = word.length-1
     reversed = ""
     while i >= 0
         char = word[i]
-        reversed = char + reversed
+        reversed = reversed + char
+
         i -= 1
     end
     return reversed
