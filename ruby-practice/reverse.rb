@@ -1,7 +1,6 @@
 #reverse the string input as word and output it in reverse. 
-def reverse(word)
 
- 
+def reverse(word)
 end
 
 puts reverse("cat")          # => "tac"
