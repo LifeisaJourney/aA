@@ -7,11 +7,8 @@ def is_palindrome(word)
         i-=1
     end
     # puts palin_string
-    if word == palin_string
-        return true
-    else
-        return false
-    end
+    return word == palin_string
+
 end
 
 puts is_palindrome("racecar")  # => true
