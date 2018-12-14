@@ -1,5 +1,6 @@
 #Takes the array and return the array of values for between min and max and odd 
 def odd_range(min, max)
+    #alternative solution is to set i = min then the if condition won't require the extra condition of i>= min
     i=0
     odd_only = []
     while i <= max 
