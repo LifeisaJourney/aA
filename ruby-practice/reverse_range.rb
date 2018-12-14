@@ -1,3 +1,7 @@
+# accepts array
+# min and max not included in the array
+# return the array in reverse
+
 def reverse_range(min, max)
 
 end
