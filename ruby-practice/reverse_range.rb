@@ -2,6 +2,8 @@
 # min and max not included in the array
 # return the array in reverse by unshift method
 
+
+#alternative solution is to countdown with decreasing iteration
 def reverse_range(min, max)
     i=min 
     reversed_arr =[]
