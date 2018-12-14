@@ -5,7 +5,7 @@
 
 #alternative solution is to countdown with decreasing iteration
 # i = max - 1
-# while i < max 
+# while i > min
 # reversed_arr << i 
 # i -=1 
 # end 
