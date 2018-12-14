@@ -1,3 +1,4 @@
+#return inclusive values in array from the array
 def range(min, max)
 
 end
