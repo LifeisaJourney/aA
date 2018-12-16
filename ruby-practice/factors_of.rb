@@ -1,3 +1,6 @@
+#Take an integer and return in an array
+#Return values that can divide num by itself
+
 def factors_of(num)
     i = 1
     new_array = []
