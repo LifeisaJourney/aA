@@ -1,3 +1,5 @@
+# takes sentence and returns a new sentence
+# every word is longer than 4 characters will have all its vowels removed
 def abbreviate_sentence(sent)
 	
 end
