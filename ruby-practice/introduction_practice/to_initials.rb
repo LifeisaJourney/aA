@@ -1,3 +1,5 @@
+# Take the inital letters of each word and return in string.
+# Find alternative solution to it
 def to_initials(name)
     str = ""
     partial = name.split(" ")
