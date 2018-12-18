@@ -1,3 +1,5 @@
+# takes array and two elements
+# return element that appears earlier in the array.
 def first_in_array(arr, el1, el2)
 
 end
