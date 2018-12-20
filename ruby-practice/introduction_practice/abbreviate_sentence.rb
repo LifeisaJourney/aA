@@ -25,6 +25,7 @@ def abbreviate_word(word)
         end
     end
     return new_word
+    
 end
 
 
