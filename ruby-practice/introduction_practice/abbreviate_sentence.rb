@@ -1,5 +1,8 @@
 # takes sentence and returns a new sentence
 # every word is longer than 4 characters will have all its vowels removed
+# hold the sent within an empty array then reconvert it back to string. 
+# array is easier to modify
+
 def abbreviate_sentence(sent)
     words = sent.split(" ")
     array_container = []
