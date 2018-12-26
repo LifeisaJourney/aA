@@ -3,7 +3,12 @@
 # return string
 
 def array_translate(array)
+    new_string = ""
+    i=0
+    while i < array.length
 
+    end
+    return new_string
 end
 
 print array_translate(["Cat", 2, "Dog", 3, "Mouse", 1]); # => "CatCatDogDogDogMouse"
