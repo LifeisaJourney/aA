@@ -1,3 +1,6 @@
+#take in array of unique elements
+#return elements of all combinations
+
 def combinations(arr)
 
 end
