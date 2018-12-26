@@ -1,3 +1,5 @@
+# use pop and unshift
+# use num as reference to times method 
 def rotate_array(arr, num)
 
 end
