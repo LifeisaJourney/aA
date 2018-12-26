@@ -1,3 +1,7 @@
+#take array
+# the number represents the amount of times a word is repeated
+# return string
+
 def array_translate(array)
 
 end
