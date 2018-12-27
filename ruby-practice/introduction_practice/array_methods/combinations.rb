@@ -2,9 +2,15 @@
 #return elements of all combinations
 
 def combinations(arr)
+    pairs = []
     arr.each_with_index do |ele1, idx1|
-        arr.each_with_index do |
+        arr.each_with_index do |ele2, idx2|
+            if idx2>idx1 
+                pairs << [ele1, ele2]
+            end
+        end
     end
+    return pairs
 end
 
 print combinations(["a", "b", "c"]); # => [ [ "a", "b" ], [ "a", "c" ], [ "b", "c" ] ]
