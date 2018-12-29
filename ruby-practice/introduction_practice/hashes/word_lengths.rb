@@ -1,3 +1,6 @@
+# split the sentence into array
+# Declare empty hash
+# add word.length into empty hash
 def word_lengths(sentence)
 
 end
