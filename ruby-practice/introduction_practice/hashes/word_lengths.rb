@@ -1,6 +1,7 @@
 # split the sentence into array
 # Declare empty hash
 # add word.length into empty hash
+#return empty hash
 def word_lengths(sentence)
     new_hashes = {}
     turn_array = sentence.split(" ")
