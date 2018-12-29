@@ -1,5 +1,5 @@
 def get_full_name(hash)
-
+    return hash["first"] + " " + hash["last"] + ", " + "the " + hash["title"]
 end
 
 hash1 = {"first"=>"Michael", "last"=>"Jordan", "title"=> "GOAT"}
