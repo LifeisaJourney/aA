@@ -4,7 +4,10 @@
 #key is unique throughout hash
 
 def retrieve_values(hash1, hash2, key)
-
+    h1 = hash1[key]
+    h2 = hash2[key]
+    return [h1, h2]
+    #Not sure if [] is required since return h1, h2 works
 end
 
 
