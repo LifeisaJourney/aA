@@ -1,3 +1,8 @@
+#Takes hash
+#Returns array
+#each hash should return only things specific to the key
+#key is unique throughout hash
+
 def retrieve_values(hash1, hash2, key)
 
 end
