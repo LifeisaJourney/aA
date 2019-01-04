@@ -1,3 +1,6 @@
+#takes parameter
+#return hash containing those key values
+
 def cat_builder(name_str, color_str, age_num)
 
 end
