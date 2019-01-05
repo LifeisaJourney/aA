@@ -1,3 +1,7 @@
+# Takes array
+# Returns hash
+# Within hash contains count of each element in array without selection
+
 def element_count(arr)
 
 end
