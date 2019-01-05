@@ -2,8 +2,13 @@
 #returns new hash
 #selects for uppercase to match the key
 def select_upcase_keys(hash)
-
-
+    new_hash = {}
+    hash.each do |key, val|
+        if key == key.upcase 
+            new_hash[key]=val        
+        end
+    end
+    return new_hash
 end
 
 print select_upcase_keys({"make"=> "Tesla", "MODEL"=> "S", "Year"=> 2018, "SEATS"=> 4}) # => {"MODEL"=>"S", "SEATS"=>4}
