@@ -1,4 +1,8 @@
+#takes hash
+#returns new hash
+#selects for uppercase to match the key
 def select_upcase_keys(hash)
+
 
 end
 
