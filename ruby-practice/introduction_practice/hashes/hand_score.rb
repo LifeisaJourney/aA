@@ -1,3 +1,6 @@
+#takes string and returns integer counter
+#the string can be upcase or downcase
+
 def hand_score(hand)
 
 end
