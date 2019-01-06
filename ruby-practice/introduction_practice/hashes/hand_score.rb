@@ -22,7 +22,17 @@
 
 
 def hand_score(hand)
-
+    points = {
+        "A" => 4,
+        "K" => 3,
+        "Q" => 2,
+        "J" => 1
+    }
+    score = 0
+    hand.each_char do |char|
+        score += points[char.upcase]
+    end
+    return score
 end
 
 puts hand_score("AQAJ") #=> 11
