@@ -1,4 +1,7 @@
 # Hint: all keys of a hash are automatically unique
+# Takes array 
+#return hash
+# remove duplicates
 
 def unique_elements(arr)
 

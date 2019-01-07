@@ -1,3 +1,7 @@
+# takes arr and hash
+#returns arr 
+# the returned arr  replaces the key with value
+
 def element_replace(arr, hash)
 
 end
