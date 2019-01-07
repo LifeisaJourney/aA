@@ -1,7 +1,11 @@
 #takes hash 
-#returns 2D array with key-value pair 
+#returns a 2D array with every key-value pair in its' own array
 def hash_to_pairs(hash)
-
+    new_arr = []
+    hash.each do | k , v |
+        new_arr << [k,v]
+    end
+    return new_arr
 end
   
   
