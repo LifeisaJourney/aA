@@ -1,5 +1,12 @@
 def two_d_translate(arr)
+    new_arr = []
+    arr.each do |subele|
+        first = subele[0]
+        second = subele[1]
+        second.times { new_arr << first}
+    end
 
+    return new_arr
 end
 
 arr_1 = [
