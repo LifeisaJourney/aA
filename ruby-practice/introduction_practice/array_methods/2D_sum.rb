@@ -1,5 +1,11 @@
 def two_d_sum(arr)
-
+  total=0
+  arr.each do |ele|
+    ele.each do |subele|
+      total+=subele
+    end
+  end
+  return total
 end
 
 array_1 = [
