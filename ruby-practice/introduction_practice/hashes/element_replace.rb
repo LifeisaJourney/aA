@@ -3,7 +3,16 @@
 # the returned arr  replaces the key with value
 
 def element_replace(arr, hash)
-
+    new_array = []
+    arr.each do |ele1|
+        # p ele1
+        if hash.has_key?(ele1)
+            new_array << hash[ele1]
+        else 
+            new_array << ele1
+        end
+    end
+    return new_array
 end
 
 arr1 = ["LeBron James", "Lionel Messi", "Serena Williams"]
