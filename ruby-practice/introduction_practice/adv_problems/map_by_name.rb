@@ -1,7 +1,5 @@
 def map_by_name(arr)
-  arr.map do |hash|
-    hash["name"]
-  end
+  return arr.map { |hash| hash["name"] }
 end
 
 
