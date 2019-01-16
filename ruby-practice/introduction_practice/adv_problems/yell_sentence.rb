@@ -1,6 +1,7 @@
 #takes string
 #returns string
 # add ! to the end of every word
+#map works only on array so split is necessary
 #split sentence to return each word
 def yell_sentence(sent)
     words = sent.split(" ")
