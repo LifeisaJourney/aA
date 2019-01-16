@@ -1,7 +1,10 @@
-
+# takes array of hashes and key-string 
+# returns new array by selecting for values
 
 def map_by_key(arr, key)
-
+    arr.map do |hash|
+        hash[key]
+    end
 end
 
 locations = [
