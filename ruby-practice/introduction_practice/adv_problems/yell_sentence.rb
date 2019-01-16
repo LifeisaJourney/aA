@@ -1,3 +1,7 @@
+#takes string
+#returns string
+# add ! to the end of every word
+
 def yell_sentence(sent)
 
 end
