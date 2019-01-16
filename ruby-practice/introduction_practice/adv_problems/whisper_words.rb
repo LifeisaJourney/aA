@@ -1,3 +1,7 @@
+#take array of words
+#return array of words
+# add ... to the end of every word
+
 def whisper_words(words)
 
 end
