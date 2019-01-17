@@ -1,3 +1,6 @@
+#find prime numbers
+#then return prime numbers
+
 def pick_primes(numbers)
     
 end
