@@ -1,3 +1,5 @@
+#find the prime number
+#then select for the factors
 def prime_factors(num)
     prime_array = []
     (1...num).each do |ele|
