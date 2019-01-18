@@ -1,8 +1,8 @@
 def longer_string(str1, str2)
-    if str2.length > str1.length
-        return str2
-    else
-        return str1
+	if str1.length >= str2.length
+      return str1
+    else 
+      return str2
     end
 end
 
