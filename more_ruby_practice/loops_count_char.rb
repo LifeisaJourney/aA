@@ -1,3 +1,4 @@
+#watch out for each iteration to look for e
 def count_e(word)
     count = 0
     i= 0
