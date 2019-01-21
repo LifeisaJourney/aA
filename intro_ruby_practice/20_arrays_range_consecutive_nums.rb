@@ -1,5 +1,5 @@
 def range(min, max)
-    i = min
+    
  new_arr = []
      while min <= max
 
