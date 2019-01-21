@@ -1,5 +1,5 @@
 def first_half(array)
-
+  
 end
   
   print first_half(["Brian", "Abby", "David", "Ommi"]) # => ["Brian", "Abby"]
