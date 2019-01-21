@@ -1,5 +1,13 @@
 def factors_of(num)
- 
+  i = 1
+  new_arr = []
+  while i <= num 
+    if num % i == 0
+      new_arr << i      
+    end
+    i+=1 
+  end
+  return new_arr
 end
   
   print factors_of(3)   # => [1, 3]
