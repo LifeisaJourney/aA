@@ -1,11 +1,10 @@
 def range(min, max)
-    i = 0
+    i = min
  new_arr = []
      while min <= max
 
      new_arr << min
      min +=1
-     i+=1
    end
  return new_arr
 end
