@@ -1,5 +1,11 @@
 def sum_elements(arr1, arr2)
-
+  i = 0
+  new_arr = []
+  while i < arr1.length
+    new_arr << arr1[i] + arr2[i]
+    i+=1
+  end
+  return new_arr
 end
 
 print sum_elements([7, 4, 4], [3, 2, 11])                            # => [10, 6, 15]
