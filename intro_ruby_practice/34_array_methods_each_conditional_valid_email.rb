@@ -17,8 +17,8 @@ def is_valid_email(str)
         if !alphabet.include?(char)
             return false
         end
-        
     end
+    
     if second.split(".").length == 2
         return true
     else 
