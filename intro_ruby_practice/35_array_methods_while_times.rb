@@ -3,8 +3,8 @@ def array_translate(array)
   new_str = ""
   while i < array.length
     word = array[i]
-    times = array[i+1]
-    times.times {new_str << word}
+    chan = array[i+1]
+    chan.times {new_str << word}
     i+=2
   end
   return new_str
