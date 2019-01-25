@@ -1,3 +1,5 @@
+#Write a method combinations that takes in an array of unique elements, the method should return a 2D array representing all possible combinations of 2 elements of the array.
+
 def combinations(arr)
   new_arr = []
   arr.each.with_index do |ele1, i1|

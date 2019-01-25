@@ -1,3 +1,5 @@
+#Write a method fizz_buzz(max) that takes in a number max and returns an array containing all numbers from 0 to max that are divisible by either 4 or 6, but not both.
+
 def fizz_buzz(max)
   i = 1
   new_arr = []

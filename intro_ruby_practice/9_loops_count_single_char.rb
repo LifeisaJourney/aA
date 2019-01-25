@@ -1,4 +1,7 @@
+#Write a method count_e(word) that takes in a string word and returns the number of e's in the word
+
 #watch out for each iteration to look for e
+
 def count_e(word)
     count = 0
     i= 0

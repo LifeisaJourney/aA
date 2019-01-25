@@ -1,3 +1,5 @@
+#Write a method rotate_array that takes in an array and a number. The method should return the array after rotating the elements the specified number of times. A single rotation takes the last element of the array and moves it to the front.
+
 def rotate_array(arr, num)
   num.times do 
     ele = arr.pop

@@ -1,3 +1,5 @@
+#Write a method larger_number(num1, num2) that takes in two numbers and returns the larger of the two numbers.
+
 def larger_number(num1, num2)
     if num2 > num1
         return num2

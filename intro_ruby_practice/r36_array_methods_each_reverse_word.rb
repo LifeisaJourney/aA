@@ -1,3 +1,5 @@
+#Write a method reverse_words that takes in a sentence string and returns the sentence with the order of the characters in each word reversed. Note that we need to reverse the order of characters in the words, do not reverse the order of words in the sentence.
+
 def reverse_words(sent)
     return_str = []
     splitter = sent.split(" ")

@@ -1,3 +1,5 @@
+#Write a method first_in_array that takes in an array and two elements, the method should return the element that appears earlier in the array.
+
 def first_in_array(arr, el1, el2)
   if arr.index(el1) > arr.index(el2)
     return el2

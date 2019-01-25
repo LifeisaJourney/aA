@@ -1,3 +1,5 @@
+#Write a method either_only(number) that takes in a number and returns true if the number is divisible by either 3 or 5, but not both. The method should return false otherwise.
+
 def either_only(number)
 	if (number % 3 == 0 && number % 5 != 0) 
       	return true
