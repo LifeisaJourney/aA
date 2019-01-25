@@ -10,6 +10,18 @@ def pig_latin_word(word)
     return word[1..-1]+word[0]+"ay"
   end
   
+
+  #alternative solution
+  # vowels = "aeiou"
+  # if vowels.include?(word[0])
+  #   return word + "yay"
+  # end
+  
+  # word.each_char.with_index do |ele, i|
+  #   if vowels.include?(ele)
+  #     word[i..-1] + word[0...i] + "ay"
+  #   end
+  # end
 end
 
 puts pig_latin_word("apple")   # => "appleyay"
