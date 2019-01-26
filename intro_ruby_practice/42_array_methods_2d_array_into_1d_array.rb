@@ -1,7 +1,16 @@
 #Write a method two_d_translate that takes in a 2 dimensional array and translates it into a 1 dimensional array. You can assume that the inner arrays always have 2 elements. See the examples.
 
 def two_d_translate(arr)
+  new_arr = []
+  arr.each do |char|
+    first = char[0]
+    second = char[1]
 
+    second.times do |ele|
+      new_arr << first
+    end
+  end
+  return new_arr
 end
 
 arr_1 = [
