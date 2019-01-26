@@ -1,7 +1,12 @@
 #Write a method word_lengths that takes in a sentence string and returns a hash where every key is a word of the sentence, and its' corresponding value is the length of that word.
 
 def word_lengths(sentence)
-
+    empty_hash = {}
+    splitter = sentence.split(" ")
+    splitter.each do |char|
+        empty_hash[char] = char.length
+    end
+    return empty_hash
 end
 
 puts word_lengths("this is fun") #=> {"this"=>4, "is"=>2, "fun"=>3}
