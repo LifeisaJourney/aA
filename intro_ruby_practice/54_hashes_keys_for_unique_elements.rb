@@ -3,7 +3,9 @@
 # Hint: all keys of a hash are automatically unique
 
 def unique_elements(arr)
-
+    hash_empty= {}
+    arr.each {|ele| hash_empty[ele] = true}
+    return hash_empty.keys
 end
 
 print unique_elements(['a', 'b', 'a', 'a', 'b', 'c']) #=> ["a", "b", "c"]
