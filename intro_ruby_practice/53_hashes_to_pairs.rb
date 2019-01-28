@@ -1,7 +1,11 @@
 #Write a method hash_to_pairs that takes in a hash and returns a 2D array representing each key-value pair of the hash.
 
 def hash_to_pairs(hash)
-
+    new_arr = []
+    hash.each do |k, v|
+        new_arr << [k, v]
+    end
+    return new_arr
 end
 
 
