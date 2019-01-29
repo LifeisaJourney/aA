@@ -2,6 +2,7 @@
 
 def prime_factors(num)
 
+    
 end
 
 print prime_factors(24) #=> [2, 3]
