@@ -2,7 +2,12 @@
 
 
 def triple_sequence(start, length)
+    arr_container = [start]
+    while arr_container.length < length 
+        arr_container << start * 3 
 
+    end
+    return arr_container
 end
 
 print triple_sequence(2, 4) # => [2, 6, 18, 54]
