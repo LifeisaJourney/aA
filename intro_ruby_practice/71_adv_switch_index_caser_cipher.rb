@@ -4,7 +4,17 @@
 # alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 def caesar_cipher(str, num)
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    new_str = ""
 
+    str.each_char do |ele|
+        old_index = alphabet.index(ele)
+        new_index = old_index + num 
+        new_char = alphabet[new_index % 26]
+        new_str << new_char
+
+    end
+    return new_str
 end
 
 puts caesar_cipher("apple", 1)    #=> "bqqmf"
