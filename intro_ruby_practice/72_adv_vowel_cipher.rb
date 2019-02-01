@@ -20,7 +20,22 @@
 
 
 def vowel_cipher(string)
+    vowels = { 
+        "a" => "e",
+        "e" => "i",
+        "i" => "o", 
+        "o" => "u",
+        "u" => "a"
+    }
 
+    new_str = string.split("").map do |char|
+        if vowels.include?(char)
+            vowels[char]
+        else
+            char
+        end
+    end
+    return new_str.join("")
 end
 
 puts vowel_cipher("bootcamp") #=> buutcemp
