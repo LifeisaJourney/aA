@@ -1,7 +1,16 @@
 #Write a method adjacent_sum that takes in an array of numbers and returns a new array containing the sums of adjacent numbers in the original array. See the examples.
 
 def adjacent_sum(arr)
+    new_arr = []
 
+    arr.each_with_index do |ele, i|
+        if i != arr.length- 1
+            nxt_ele = arr[i] + arr[i+1]
+            new_arr << nxt_ele
+        end
+    end
+
+    return new_arr
 end
 
 print adjacent_sum([3, 7, 2, 11]) #=> [10, 9, 13], because [ 3+7, 7+2, 2+11 ]
