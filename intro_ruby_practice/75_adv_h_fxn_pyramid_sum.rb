@@ -17,7 +17,7 @@ end
 
 def summation(nums)
     new_arr = []
-    nums.each_with_index do |ele, i|
+    nums.each.with_index do |ele, i|
         if i != nums.length - 1 
             new_arr << nums[i] + nums[i + 1] 
         end
