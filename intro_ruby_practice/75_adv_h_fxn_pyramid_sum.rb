@@ -6,7 +6,23 @@
 # 1   4    6
 
 def pyramid_sum(base)
+    pyramid = [base]
+    while pyramid.length < base.length 
+        prev = pyramid[0]
+        nex = summation(prev)
+        pyramid.unshift(nex)
+    end
+    return pyramid
+end
 
+def summation(nums)
+    new_arr = []
+    nums.each_with_index do |ele, i|
+        if i != nums.length - 1 
+            new_arr << nums[i] + nums[i + 1] 
+        end
+    end
+    return new_arr
 end
 
 print pyramid_sum([1, 4, 6]) #=> [[15], [5, 10], [1, 4, 6]]
