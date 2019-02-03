@@ -1,7 +1,22 @@
 #Write a method all_else_equal that takes in an array of numbers. The method should return the element of the array that is equal to half of the sum of all elements of the array. If there is no such element, the method should return nil.
 
 def all_else_equal(arr)
+  sum = summation(arr)
 
+  arr.each do |ele|
+    if sum /2.0 == ele
+      return ele
+    end
+  end
+  return nil
+end
+
+def summation(nums)
+  count = 0
+  nums.each do |ele|
+    count += ele
+  end
+  return count
 end
 
 p all_else_equal([2, 4, 3, 10, 1]) #=> 10, because the sum of all elements is 20
