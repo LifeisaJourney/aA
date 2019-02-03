@@ -13,8 +13,15 @@ def anagrams?(word1, word2)
   # return false
 
   #   Solution 2:
+  return check_char(word1) == check_char(word2)
+
 end
 
+def check_char(words)
+  count = Hash.new(0)
+  words.each_char { |char| count[char]+=1 }
+  return count
+end
 puts anagrams?("cat", "act")          #=> true
 puts anagrams?("restful", "fluster")  #=> true
 puts anagrams?("cat", "dog")          #=> false
