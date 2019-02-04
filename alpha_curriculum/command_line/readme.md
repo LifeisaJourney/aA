@@ -203,16 +203,16 @@ Just like using the terminal, these keyboard shortcuts will make development muc
 NB Many of these also work in the browser and other OSX apps.
 
 # Terminal
-| Shortcut	| Command |
-------------------------------
-|⌘ + shift + ] / [	| Switch tab right/left |
-|ctrl + A / E	| Move cursor to beginning / end of line |
-|ctrl + U / K	 | Delete to beginning / end of line |
-|ctrl + W	|Delete to start of word|
-|ctrl + C	|Terminate command |
-|option + ← →	|Move cursor one word left / right |
-|↑ ↓	|Navigate command history|
-|⌘ + K	|Clear command history|
+ Shortcut	| Command 
+----------- | ----------------
+⌘ + shift + ] / [	| Switch tab right/left 
+ctrl + A / E	| Move cursor to beginning / end of line 
+ctrl + U / K	 | Delete to beginning / end of line 
+ctrl + W	|Delete to start of word
+ctrl + C	|Terminate command 
+option + ← →	|Move cursor one word left / right 
+↑ ↓	|Navigate command history
+⌘ + K	|Clear command history
 
 # Atom
  Shortcut	| Command 
