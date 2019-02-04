@@ -1,11 +1,11 @@
-#Command Line Exercises and Shortcuts
+# Command Line Exercises and Shortcuts
 Today, we're going to become comfortable using the command line. The more you can do without leaving the terminal, the more efficient you will be as a developer. Seconds saved during common operations may seem trivial at the moment, but summed over the course of your career they will be invaluable. Furthermore, the less you need to worry about coding "logistics," the more you can focus on coding itself!
 
 A quick note before we start: whenever you are learning a new concept in development, never copy and paste code. You will remember it much better if you type it out. Take the extra few seconds, or even minutes if necessary.
 
 Let us begin!
 
-#Commands to Master
+# Commands to Master
 ls
 pwd
 cd
@@ -21,7 +21,7 @@ unzip
 clear
 open
 
-#Spotlight Search
+# Spotlight Search
 Start by pressing ⌘-SPACE to open Spotlight Search.
 
 Type in terminal and press enter to open the Terminal app.
@@ -196,12 +196,12 @@ Lastly, have countless hours of fun talking to your computer with the say [text]
 say hello world
 
 
-#Keyboard Shortcuts
+# Keyboard Shortcuts
 Just like using the terminal, these keyboard shortcuts will make development much faster. Use them often and they will become second nature in no time. When someone is cruising around their code with shortcuts on the job or in an interview, it demonstrates experience and dedication towards making their development workflow more efficient.
 
 NB Many of these also work in the browser and other OSX apps.
 
-#Terminal
+# Terminal
 Shortcut	Command
 ⌘ + shift + ] / [	Switch tab right/left
 ctrl + A / E	Move cursor to beginning / end of line
@@ -212,7 +212,7 @@ option + ← →	Move cursor one word left / right
 ↑ ↓	Navigate command history
 ⌘ + K	Clear command history
 
-#Atom
+# Atom
 Shortcut	Command
 ⌘ + /	Toggle comment for line/selection
 ⌘ + ← →	Move cursor to beginning/end of line
@@ -230,7 +230,7 @@ ctrl + shift + K	Delete the current line
 ⌘ + shift + P	The command palette
 ⌘ + ctrl + ↓ ↑	Move current line up/down
 
-#Multi-line Selecting
+# Multi-line Selecting
 A powerful feature of many modern text editors like Atom
 
 Shortcut	Command
