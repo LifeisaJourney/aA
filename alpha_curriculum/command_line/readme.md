@@ -215,31 +215,31 @@ NB Many of these also work in the browser and other OSX apps.
 |⌘ + K	|Clear command history|
 
 # Atom
-| Shortcut	| Command |
-------------------------------
-|⌘ + /	|Toggle comment for line/selection
-|⌘ + ← →	|Move cursor to beginning/end of line|
-|⌘ + ↑ ↓	|Move cursor to beginning/end of document|
-|⌘ + enter	|Create new line below cursor|
-|⌘ + shift + enter	|Create new line above cursor|
-|⌘ + L	Select the current line|
-|⌘ + shift + D	|Duplicate the current line|
-|ctrl + shift + K	|Delete the current line|
-|⌘ + ] / [	|Indent/Outdent current line|
-|⌘ + T	|Open fuzzy file finder|
-|⌘ + F	|Find in document|
-|⌘ + \	|Toggle sidebar|
-|⌘ + shift + F	|Find in project|
-|⌘ + shift + P	|The command palette|
-|⌘ + ctrl + ↓ ↑	|Move current line up/down|
+ Shortcut	| Command 
+----------- | ----------
+⌘ + /	|Toggle comment for line/selection
+⌘ + ← →	|Move cursor to beginning/end of line
+⌘ + ↑ ↓	|Move cursor to beginning/end of document
+⌘ + enter	|Create new line below cursor
+⌘ + shift + enter	|Create new line above cursor
+⌘ + L	Select the current line
+⌘ + shift + D	|Duplicate the current line
+ctrl + shift + K	|Delete the current line
+⌘ + ] / [	|Indent/Outdent current line
+⌘ + T	|Open fuzzy file finder
+⌘ + F	|Find in document
+⌘ + \	|Toggle sidebar
+⌘ + shift + F	|Find in project
+⌘ + shift + P	|The command palette
+⌘ + ctrl + ↓ ↑	|Move current line up/down
 
 # Multi-line Selecting
 A powerful feature of many modern text editors like Atom
 
-| Shortcut	| Command |
-------------------------------
-|⌘ + click	|Place multiple cursors|
-|⌥ + ← →	|Intelligently move cursor by word|
-|⌥ + shift + ← →	|Intelligently move and select by word|
-|⌘ + shift + L	|Place a cursor at the end of each line in selection|
-|ctrl + ⌘ + G	|Select all instances of selection|
+ Shortcut	| Command 
+----------- | ------------------
+⌘ + click	|Place multiple cursors
+⌥ + ← →	|Intelligently move cursor by word
+⌥ + shift + ← →	|Intelligently move and select by word
+⌘ + shift + L	|Place a cursor at the end of each line in selection
+ctrl + ⌘ + G	|Select all instances of selection
