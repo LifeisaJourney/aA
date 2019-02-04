@@ -4,10 +4,8 @@ def same_char_collapse(str)
     reducible = true
 
     while reducible
-
         new_arr = str.split("")
         reducible = false
-
         new_arr.each.with_index do |char, i|
             if new_arr[i] == new_arr[i+1]
                 new_arr[i] = ""
@@ -16,12 +14,9 @@ def same_char_collapse(str)
                 break
             end
         end
-        
         str = new_arr.join("")
     end
     return str
-
-
 end
 
 puts same_char_collapse("zzzxaaxy")   #=> "zy"
