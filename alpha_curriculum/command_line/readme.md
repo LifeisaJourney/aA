@@ -28,7 +28,7 @@ Type in terminal and press enter to open the Terminal app.
 
 Terminal will start in what is called the HOME directory, denoted by ~.
 
-ls
+### ls
 List out all the contents in your home directory with ls.
 
 ls
@@ -39,7 +39,8 @@ Desktop      Downloads    Movies       Pictures
 If you don't, try using this command before using ls. We will cover it soon.
 
 cd
-pwd
+
+### pwd
 To see what directory you are currently in, use pwd.
 
 pwd
@@ -48,7 +49,7 @@ This should print out something like this:
 /Users/username/
 This is the path to our home directory, denoted by ~. Most of the files and directories we work with will be contained inside this directory. Levels above our home directory, for instance at /Users/ or just /, contain information that our operating system uses to run. Feel free to poke around, but don't change anything.
 
-cd
+### cd
 Our current working directory (CWD) is the directory that is currently being looked at by the terminal. Right now, that is the home directory (~).
 
 cd stands for "change directory".
@@ -65,7 +66,7 @@ The pwd command we used earlier prints our CWD (current working directory). Use 
 ~/Desktop$
 Earlier, we used the cd command without a directory. The cd command will default to ~, the HOME directory.
 
-mkdir
+### mkdir
 Make your own directory called my_directory by using the mkdir command.
 
 mkdir my_directory
@@ -73,11 +74,11 @@ List out the contents to see this new directory.
 
 Change your current working directory to be your new directory and make another called my_subdirectory inside of my_directory
 
-touch
+### touch
 Go into your sub directory and create a new file called my_file.txt with the touch command.
 
 touch my_file.txt
-atom
+### atom
 Open up your newly created file in the Atom text editor by using the atom command.
 
 atom .
@@ -85,7 +86,7 @@ The . denotes the CWD.
 
 Add some text to your file and save it!
 
-cp
+### cp
 It would be a shame to lose your hard work. Create a copy of your file my_copied_file.txt with the cp command.
 
 cp my_file.txt my_copied_file.txt
@@ -106,7 +107,7 @@ List out the contents of your newly copied subdirectory:
 ls my_copied_subdirectory
 Note: The default for ls is to list the contents of ., the CWD.
 
-mv
+### mv
 Moving and renaming both happen with the same command, mv. Rename my_copied_subdirectory as my_moved_subdirectory by moving it with the mv command.
 
 mv my_copied_subdirectory my_moved_subdirectory
@@ -124,7 +125,7 @@ When using commands that reference directories, we can chain them together until
 cd my_subdirectory/my_moved_subdirectory
 See what's in here.
 
-rm
+### rm
 We can delete, or remove, directories and files from the command line using the rm command. When using rm, we have to handle files and directories differently. We can delete files easily, let's delete our text file in our CWD.
 
 ls
@@ -140,7 +141,7 @@ Make sure it's gone.
 
 When we say the rm command deletes something, the item removed doesn't get put it in the Trash. It's gone... forever. This command is incredibly powerful, and with great power comes great responsibility: be absolutely sure you want to delete a file or directory with all its sub-directories before running this command. There's no going back.
 
-man
+### man
 That was warm up! We'll find that there are a lot of useful tips and documentation right in our terminal and tools. Let's get serious by opening up the manual for the zip command using man.
 
 man zip
@@ -163,7 +164,7 @@ Skim the manual and figure out how to zip directories with zip. The USE section 
 
 When you're done, press q to exit the doc. We can use man to explore the uses of any command line function. Who needs Google? The answers lie within.
 
-zip
+### zip
 Use your new found knowledge to create a zip of my_directory.
 
 zip -r my_directory.zip my_directory
@@ -173,7 +174,7 @@ Now that you've compressed your files, you can delete the originals by using rm 
 
 Don't forget to check that it's gone.
 
-unzip
+### unzip
 Fear not. Whenever you need your files, just use the unzip command with your zip file.
 
 unzip my_directory.zip
@@ -181,16 +182,16 @@ ls
 clear
 Clean up your terminal window. Use clear to clear your scrollable history.
 
-clear
+### clear
 You can also do this by pressing ⌘-k.
 
-open
+### open
 The open command will open a file or folder with the default application. The default application for a folder is Finder. While you may be more comfortable using a GUI right now, using the terminal is markedly more efficient for most common tasks. So try to use it as much as possible! Stay a while and you'll learn to love it.
 
 Open your CWD in Finder:
 
 open .
-say
+### say
 Lastly, have countless hours of fun talking to your computer with the say [text] command.
 
 say hello world
