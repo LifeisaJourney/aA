@@ -6,20 +6,20 @@ A quick note before we start: whenever you are learning a new concept in develop
 Let us begin!
 
 # Commands to Master
-ls
-pwd
-cd
-mkdir
-touch
-atom
-cp
-mv
-rm
-man
-zip
-unzip
-clear
-open
+1. ls
+1. pwd
+1. cd
+1. mkdir
+1. touch
+1. atom
+1. cp
+1. mv
+1. rm
+1. man
+1. zip
+1. unzip
+1. clear
+1. open
 
 # Spotlight Search
 Start by pressing ⌘-SPACE to open Spotlight Search.
