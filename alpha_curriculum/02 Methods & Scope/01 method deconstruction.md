@@ -1,4 +1,4 @@
-#Method Deconstruction
+# Method Deconstruction
 'lcm' stands for Least Common Multiple. Every number has multiples. The 'lcm' is the lowest multiple shared by two numbers. For example:
 
 |1	|2	|3	|4	|5	|6
