@@ -13,6 +13,8 @@ One defines a method by preceding the method's name with the keyword def. Method
 * They should be in snake case (this_is_snake_case).
 * They cannot have special characters (&, ^, %, etc...`).
 * They cannot be a reserved keyword.
+
+
 num_one and num_two are the method's **parameters**. Parameters are variables declared upon method definition that represent the arguments passed in upon invocation. A method that's invoked with zero arguments would have zero parameters. Method definition ends in end. The code between the def statement and end is the method body. The **method** **body** is the subroutine the method definition encapsulates.
 
 Defining a method does not invoke it, i.e., it does not instruct the Ruby interpreter to execute the code inside the method's body. One invokes custom methods by appending the arguments to the method's name. Try running this in the shell:
