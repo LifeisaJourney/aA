@@ -1,4 +1,4 @@
-Returning from a Method
+# Returning from a Method
 The result of the last line of a method is implicitly returned. One can explicitly return the line's result with the return keyword:
 
 def add_two_numbers(num_one, num_two)
@@ -17,7 +17,7 @@ end
 whacky_returns(1,2)
 whacky_returns(1,2) returns 3. Because whacky_returns explicitly returns num_one + num_two in the first line, it is functionally equivalent to add_two_numbers. The two lines following return num_one + num_two are unreachable code, code that can never be executed.
 
-Return Versus Puts
+# Return Versus Puts
 Why use return instead of puts? The shell prints the expression whether we return or "puts" it. Let's try defining and invoking add_two_numbers with puts:
 
 def add_two_numbers(num_one, num_two)
