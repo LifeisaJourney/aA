@@ -88,13 +88,21 @@ end
 # (the "fractional part") of the quotient.
 # (dec_remainder_of_two_floats(8.0, 5.0) => 0.6 because 8.0 / 5.0 => 1.6)
 def dec_remainder_of_two_floats(f_dividend, f_divisor)
-    
+    #mod = f_dividend % f_divisor
+    #return mod/ f_divisor
+
+    # alt solution:
+    f_quotient = f_dividend / f_divisor
+    f_quotient - f_quotient.floor
 end
 
 # Write a method that returns the decimal remainder of dividing two integers.
 # HINT: Use dec_remainder_of_two_floats as a helper method,
 # but don't forget to pass the proper type of argument
 def dec_remainder_of_two_integers(i_dividend, i_divisor)
+    f_dividend= i_dividend.to_f
+    f_divisor= i_divisor.to_f
+    dec_remainder_of_two_floats(f_dividend, f_divisor)
 end
 
 
@@ -106,4 +114,9 @@ end
 # Assume the arguments are integers.
 # HINT: Use dec_remainder_of_two_integers as a helper method
 def int_remainder_without_modulo(i_dividend, i_divisor)
+    
+    remainder= dec_remainder_of_two_integers(i_dividend, i_divisor)
+    quotient =remainder * i_divisor
+    quotient.round
+
 end
