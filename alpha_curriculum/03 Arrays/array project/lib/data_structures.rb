@@ -2,7 +2,7 @@
 
 # Write a method that returns the range of its argument (an array of integers).
 def range(arr)
-  # your code goes here
+ arr.max - arr.min
 end
 
 # Write a method that returns a boolean indicating whether an array is in sorted
@@ -10,7 +10,11 @@ end
 # whether its operands are equal, e.g., 2 == 2 => true, ["cat", "dog"] ==
 # ["dog", "cat"] => false
 def in_order?(arr)
-  # your code goes here
+  if arr == arr.sort
+    return true
+  else
+    return false
+  end
 end
 
 
@@ -18,12 +22,30 @@ end
 
 # Write a method that returns the number of vowels in its argument
 def num_vowels(str)
-  # your code goes here
+  vowels="aeiou"
+  count = 0
+  splitter = str.split("")
+  splitter.each do |char|
+    if vowels.include?(char.downcase)
+      count+=1
+    end
+  end
+  return count
 end
 
 # Write a method that returns its argument with all its vowels removed.
 def devowel(str)
-  # your code goes here
+  vowels = "aeiou"
+  new_arr = []
+  splitter = str.split('')
+  splitter.each do |char|
+    if vowels.include?(char.downcase)
+      new_arr << ""
+    else
+      new_arr << char
+    end
+  end
+  return new_arr.join("")
 end
 
 
@@ -33,7 +55,7 @@ end
 # non-negative integer in descending order and as strings, e.g.,
 # descending_digits(4291) #=> ["9", "4", "2", "1"]
 def descending_digits(int)
-  # your code goes here
+  
 end
 
 # Write a method that returns a boolean indicating whether a string has
