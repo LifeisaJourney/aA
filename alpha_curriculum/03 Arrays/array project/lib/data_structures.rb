@@ -55,26 +55,34 @@ end
 # non-negative integer in descending order and as strings, e.g.,
 # descending_digits(4291) #=> ["9", "4", "2", "1"]
 def descending_digits(int)
-  
+  #return int.to_s.chars.sort.reverse
+    splitter = int.to_s.split("").sort.reverse
+    return splitter
 end
 
 # Write a method that returns a boolean indicating whether a string has
 # repeating letters. Capital letters count as repeats of lowercase ones, e.g.,
 # repeating_letters?("Aa") => true
 def repeating_letters?(str)
-  # your code goes here
+
+  #p str.downcase.chars.uniq.length
+  str.downcase.chars.uniq.length != str.downcase.chars.length
 end
 
 # Write a method that converts an array of ten integers into a phone number in
 # the format "(123) 456-7890".
 def to_phone_number(arr)
-  # your code goes here
+
+  arr=arr.join("")
+  "(#{arr[0..2]}) #{arr[3..5]}-#{arr[6..-1]}"
 end
 
 # Write a method that returns the range of a string of comma-separated integers,
 # e.g., str_range("4,1,8") #=> 7
 def str_range(str)
-  # your code goes here
+  splitter = str.split(",")
+  ar = splitter.sort
+  ar[-1].to_i - ar[0].to_i
 end
 
 
@@ -86,4 +94,9 @@ end
 # code, but the solution is tricky!
 def my_rotate(arr, offset=1)
   # your code goes here
+  i=0
+  while i <arr.length
+    
+    i+=1
+  end
 end
