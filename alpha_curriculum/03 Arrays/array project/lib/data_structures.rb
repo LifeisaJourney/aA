@@ -94,9 +94,7 @@ end
 # code, but the solution is tricky!
 def my_rotate(arr, offset=1)
   # your code goes here
-  i=0
-  while i <arr.length
-    
-    i+=1
-  end
+  shift = offset % arr.length
+  p arr.drop(shift) + arr.take(shift)
+
 end
