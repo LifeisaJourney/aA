@@ -25,6 +25,9 @@ sad_string #=> "full of emptiness"
 
 sad_string.delete!("of emptiness") #=> "ull"
 sad_string #=> "ull"
+
+------everything above this line is same object_id, below will modify it.
+
 "f" + sad_string #=> "full" :)
 
 sad_string = "full of emptiness"
