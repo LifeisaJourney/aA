@@ -11,6 +11,7 @@
 * Iterator - A method that repeats a set of instructions once for each element in its receiver.
 * Loop - A control structure that instructs the Ruby interpreter to repeatedly execute a section of code while a condition holds.
 * Short-Circuit Evaluation - When the second operand of a logical operator is evaluated only if the first operand does not suffice to determine the value of the expression.
+
 # Comparison Operators
 * > - Greater than; returns a boolean.
 * < - Less than; returns a boolean.
@@ -19,10 +20,12 @@
 * == - Equal to; returns a boolean.
 * != - Not equal to; returns a boolean.
 * <=> - The spaceship operator; returns -1 if less than, 0 if equal to, 1 if greater than.
+
 # Logical Operators
 * && - The logical AND.
 * || - The logical (inclusive) OR.
 * ! - The logical NOT.
+
 # Iterators
 * each - Accepts a block that it invokes once for each element in the receiver collection, passing that element as an argument; returns its receiver.
 * each_index - Accepts a block that it invokes once for each element in the receiver collection, passing each index as an argument; returns its receiver.
