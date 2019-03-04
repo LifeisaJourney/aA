@@ -2,6 +2,11 @@
 
 # Return the argument with all its lowercase characters removed.
 def destructive_uppercase(str)
+  new_str = ""
+  str.each_char do |ele|
+    if ele == ele.upcase  
+      
+    end
 
 end
 
