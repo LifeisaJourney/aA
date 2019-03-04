@@ -49,7 +49,20 @@ end
 # of all whole numbers between 1 and the number itself. Assume the argument will
 # be > 0.
 def factorial(num)
+  #solution 1:
+  # factorial = 1
+  # (1..num).each do |num|
+  #   factorial *= num 
+  # end
+  # factorial
 
+  #solution 2:
+  product = num
+  until num == 1
+    num -=1 
+    product *=num 
+  end
+  product
 end
 
 
