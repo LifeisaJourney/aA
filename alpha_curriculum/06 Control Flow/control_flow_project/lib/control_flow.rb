@@ -11,10 +11,11 @@ def destructive_uppercase(str)
     
   # end
   # new_str
-  
+
   # solution 2:
+  
   str.each_char do |ele|
-    str.delete!(ele) if ele == ele.upcase 
+    str.delete!(ele) if ele == ele.downcase 
   end
   str
 end
@@ -23,6 +24,13 @@ end
 # the word is of even length, e.g. middle_substring("middle") => "dd",
 # middle_substring("mid") => "i"
 def middle_substring(str)
+  # str.each_char do |ele|
+  #   if str.length % 2 == 0
+  #     return str[str.length/2.0]
+  #   else
+  #     return str[str.length/2]
+  #   end
+  # end
 end
 
 # Return the number of vowels in a string.
