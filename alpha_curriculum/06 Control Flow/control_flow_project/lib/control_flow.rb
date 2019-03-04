@@ -34,7 +34,15 @@ end
 # Return the number of vowels in a string.
 VOWELS = %w(a e i o u)
 def num_vowels(str)
-
+  vow = ["a","e","i","o","u"]
+  # vow = "a, e, i, o, u"
+  count = 0
+  str.each_char do |ele|
+    if vow.include?(ele.downcase)
+      count+=1
+    end
+  end
+  return count
 end
 
 # Return the factoral of the argument (num). A number's factorial is the product
