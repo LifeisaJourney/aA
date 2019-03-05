@@ -117,7 +117,19 @@ end
 # integer with "buzz", and for each multiple of both 3 and 5, replace the
 # integer with "fizzbuzz".
 def fizzbuzz(n)
-
+  new_arr = []
+  (1..n).each do |ele|
+    if ele % 3 == 0 && ele % 5 == 0 
+      new_arr << "fizzbuzz"
+    elsif ele % 5 == 0 
+      new_arr << "buzz"
+    elsif ele % 3 == 0
+      new_arr << "fizz"
+    else 
+      new_arr << ele
+    end
+  end
+  return new_arr
 end
 
 
