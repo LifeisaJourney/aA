@@ -162,7 +162,13 @@ end
 
 # Write a method that returns a sorted array of the factors of its argument.
 def factors(num)
-
+  new_arr = []
+  (1..num).each do |ele|
+    if num % ele == 0 
+      new_arr << ele
+    end
+  end
+  return new_arr
 end
 
 # Write a method that returns a sorted array of the prime factors of its argument.
