@@ -35,6 +35,7 @@ end
 VOWELS = %w(a e i o u)
 def num_vowels(str)
   vow = ["a","e","i","o","u"]
+  # both array and string version works
   # vow = "a, e, i, o, u"
   count = 0
   str.each_char do |ele|
@@ -71,7 +72,12 @@ end
 # Write your own version of the join method. separator = "" ensures that the
 # default seperator is an empty string.
 def my_join(arr, separator = "")
-
+  joined = ""
+  arr.each_index do |i|
+    joined += arr[i].to_s
+    joined += separator unless i == arr.length - 1
+  end
+  return joined 
 end
 
 # Write a method that converts its argument to weirdcase, where every odd
