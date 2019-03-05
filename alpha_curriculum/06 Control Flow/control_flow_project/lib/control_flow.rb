@@ -173,12 +173,19 @@ end
 
 # Write a method that returns a sorted array of the prime factors of its argument.
 def prime_factors(num)
+  prime_factor=[]
 
+  factors(num).each do |factor|
+    if prime?(factor) 
+      prime_factor << factor
+    end
+  end
+  return prime_factor
 end
 
 # Write a method that returns the number of prime factors of its argument.
 def num_prime_factors(num)
-
+  prime_factors(num).length
 end
 
 
@@ -187,5 +194,20 @@ end
 # Return the one integer in an array that is even or odd while the rest are of
 # opposite parity, e.g. oddball([1,2,3]) => 2, oddball([2,4,5,6] => 5)
 def oddball(arr)
+  even = []
+  odd = []
 
+  arr.each do |ele|
+    if ele.even?
+      even << ele 
+    elsif 
+      odd << ele
+    end
+  end
+
+  if even.length > 1
+    return odd[0]
+  end
+
+  return even[0]
 end
