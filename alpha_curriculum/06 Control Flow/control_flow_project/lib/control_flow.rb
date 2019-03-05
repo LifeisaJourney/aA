@@ -86,7 +86,7 @@ end
 def weirdcase(str)
   return_str = ""
   #depreciated form of each_char is .char
-  
+
   str.each_char.with_index do |ele, i|
     if i.odd?
       return_str += ele.upcase
@@ -101,7 +101,15 @@ end
 # string, e.g., reverse_five("Looks like my luck has reversed") => "skooL like
 # my luck has desrever")
 def reverse_five(str)
-
+  new_arr = []
+  splitter = str.split(" ")
+  splitter.each do |ele|
+    if ele.length > 4
+      ele = ele.reverse
+    end
+    new_arr << ele 
+  end
+  new_arr.join(" ")
 end
 
 # Return an array of integers from 1 to n (inclusive), except for each multiple
