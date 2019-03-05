@@ -138,7 +138,11 @@ end
 # Write a method that returns a new array containing all the elements of the
 # original array in reverse order.
 def my_reverse(arr)
-
+  new_arr = []
+  arr.each do |ele|
+    new_arr.unshift(ele)
+  end
+  return new_arr
 end
 
 # Write a method that returns a boolean indicating whether the argument is
