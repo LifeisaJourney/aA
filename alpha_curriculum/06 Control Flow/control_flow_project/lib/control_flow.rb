@@ -148,7 +148,16 @@ end
 # Write a method that returns a boolean indicating whether the argument is
 # prime.
 def prime?(num)
+  if num == 1 
+    return false
+  end
 
+  (2..num/2).each do |ele|
+    if num % ele == 0
+      return false
+    end
+  end
+  return true
 end
 
 # Write a method that returns a sorted array of the factors of its argument.
