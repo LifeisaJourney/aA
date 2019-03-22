@@ -1,4 +1,4 @@
-How to Install RSpec
+# How to Install RSpec
 When you download each set of exercises, you'll find that they come packaged in a particular folder structure. In your file system, it should look something like this:
 
 rspec-1/
@@ -6,6 +6,7 @@ rspec-1/
  |- spec/
  |- Gemfile
  |- Gemfile.lock
+ 
 The lib/ directory contains your actual code and the spec/ directory holds all the test files. Structuring the directories in this way makes it simple to run all the tests in the spec/ directory with one command (which you'll learn at the end of this reading).
 
 Before we run the tests, we'll have to make sure we have the right gems installed. Gems are just Ruby code bundled in a self-contained format (this is commonly referred to as a library). After downloading the exercises, navigate into the directory and run the following commands (see the Introduction's Command Line & Atom task if you need a refresher on using the command line).
