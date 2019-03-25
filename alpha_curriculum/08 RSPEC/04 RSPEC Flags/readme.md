@@ -1,7 +1,7 @@
-Useful RSpec Flags
+# Useful RSpec Flags
 The follow table contains the 3 rspec flags we use as we run our testing suites.
 
-Flag	Description
+# Flag	Description
 --color	Failing tests will be colored red while passing tests will be colored green.
 --order=default	Tests will run in-order, from top to bottom
 --format documentation	Will print the full descriptions for each spec in a hierarchical format
@@ -13,10 +13,11 @@ Adding RSpec default flags
 In terminal, run atom ~/.rspec. This will open the .rspec file in your root directory.
 
 Paste and save the following code to the .rspec file.
-
+```script.js
 --color
 --format documentation
 --order=default
+```
 Now, any time you run bundle exec rspec in your future projects, it will run bundle exec rspec --color --order=default --format documentation under the hood.
 
 --format documentation vs. --format progress
