@@ -14,3 +14,7 @@ def sum(arr)
     end
     return int
 end
+
+def multiply(int, num)
+    return (int * num)
+end
