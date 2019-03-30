@@ -26,3 +26,14 @@ end
 def power(base, exp)
     return (base**exp)
 end
+
+def factorial(int)
+    i = 1
+    sum = 1
+    while i <= int 
+        sum*=i
+        i+=1
+    end
+    
+    return sum
+end
