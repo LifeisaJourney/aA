@@ -18,3 +18,11 @@ end
 def multiply(int, num)
     return (int * num)
 end
+
+def multi(int, num)
+    return (int * num)
+end
+
+def power(base, exp)
+    return (base**exp)
+end
