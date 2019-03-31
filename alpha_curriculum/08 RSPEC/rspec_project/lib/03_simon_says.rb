@@ -4,10 +4,11 @@ def echo(word)
 
 end
 
-# def shout(word)
-#     if word == "hello"
-#         return word.upcase
-#     elsif word=="bye"
-#        return  word.upcase
-#     end
-# end
+def shout(word)
+    return word.upcase
+end
+
+def repeat(word)
+
+
+end
