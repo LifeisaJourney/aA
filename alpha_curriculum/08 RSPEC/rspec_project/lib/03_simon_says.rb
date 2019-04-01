@@ -4,12 +4,10 @@ def echo(word)
 end
 
 def shout(word)
-    return word.upcase
+    return "#{word.upcase}"
 end
 
-def repeat(word)
-    new_str = ""
-    new_str << word+ " " + word
-    return new_str
+def repeat(word, repeat=2)
+    return Array.new(repeat, word).join(" ")
 end
 
