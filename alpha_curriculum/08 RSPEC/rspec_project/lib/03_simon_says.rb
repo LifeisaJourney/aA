@@ -9,5 +9,6 @@ end
 
 def repeat(word, repeat=2)
     return Array.new(repeat, word).join(" ")
+    #Array.new(#, string) will result in ["string"]
 end
 
