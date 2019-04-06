@@ -20,5 +20,6 @@ def start_of_word(word, int)
 end
 
 def first_word(word)
-    #
+    new_arr = word.split(" ")
+    return new_arr[0]
 end
