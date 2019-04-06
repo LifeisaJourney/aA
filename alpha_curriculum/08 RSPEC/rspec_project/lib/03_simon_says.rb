@@ -12,7 +12,7 @@ def repeat(word, repeat=2)
     #Array.new(#, string) will result in ["string"]
 end
 
-def start_of_word(word, int)
+def start_of_word(word, int=1)
     real = int - 1
     # p word.split("")[0]
     new_arr = word.split("")
@@ -22,4 +22,8 @@ end
 def first_word(word)
     new_arr = word.split(" ")
     return new_arr[0]
+end
+
+def titleize(title, int=1)
+   return title.capitalize
 end
