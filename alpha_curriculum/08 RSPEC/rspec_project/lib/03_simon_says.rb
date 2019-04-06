@@ -18,6 +18,5 @@ def start_of_word(word, int)
     #p word[real]
     # p word.split("")[0]
     new_arr = word.split("")
-    # return new_arr[real]
-
+    return new_arr[0..real].join("")
 end
