@@ -25,5 +25,8 @@ def first_word(word)
 end
 
 def titleize(title, int=1)
-   return title.capitalize
+   word_splitter = title.split(" ")
+   p word_splitter[0]
+   p word_splitter[1]
+   
 end
