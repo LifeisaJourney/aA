@@ -28,5 +28,6 @@ def titleize(title, int=1)
    # word_splitter = title.split(" ")
    # p word_splitter[0]
    # p word_splitter[1]
-   p Array.new(int, title).join(" ")
+   p new_arr = Array.new(int, title)
+   # p new_arr.split(" ")
 end
