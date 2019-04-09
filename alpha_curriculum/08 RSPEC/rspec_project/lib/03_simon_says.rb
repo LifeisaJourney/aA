@@ -30,11 +30,20 @@ def titleize(title, int=1)
    # p word_splitter[1]
    new_arr = []
    new_sent = ""
+   ignore = ["and", "the", "over"]
    splitter = title.split
    splitter.each do |ele|
       # new_sent << ele[0].upcase + ele[1..-1].downcase
-      new_arr << ele.capitalize 
-      new_sent = new_arr.join(" ")
+
+         if ele.include?("and") 
+            new_arr << ele.downcase
+         else
+            new_arr << ele.capitalize 
+         end
+         new_sent = new_arr.join(" ")
+      
+   
+
    end
    return new_sent
    # p new_arr
