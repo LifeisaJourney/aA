@@ -28,6 +28,16 @@ def titleize(title, int=1)
    # word_splitter = title.split(" ")
    # p word_splitter[0]
    # p word_splitter[1]
-   p new_arr = Array.new(int, title)
+   new_arr = []
+   new_sent = ""
+   splitter = title.split
+   splitter.each do |ele|
+      # new_sent << ele[0].upcase + ele[1..-1].downcase
+      new_arr << ele.capitalize 
+      new_sent = new_arr.join(" ")
+   end
+   return new_sent
+   # p new_arr
+   # p new_arr = Array.new(title)
    # p new_arr.split(" ")
 end
