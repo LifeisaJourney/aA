@@ -30,13 +30,13 @@ def titleize(title, int=1)
    splitter = title.split
    splitter.map do |ele|
       if ele.include?("and") || ele.include?("over") || ele.include?("the")
-            new_arr << ele.downcase
+         new_arr << ele.downcase
       else
-            new_arr << ele.capitalize 
-            if new_arr[0] == "the"
-               new_arr[0] = new_arr[0].capitalize
-            end
+         new_arr << ele.capitalize 
+         if new_arr[0] == "the"
+            new_arr[0] = new_arr[0].capitalize
          end
+      end
       new_sent = new_arr.join(" ")
    end
    return new_sent
