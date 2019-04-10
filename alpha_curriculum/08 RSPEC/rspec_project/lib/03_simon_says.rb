@@ -25,28 +25,19 @@ def first_word(word)
 end
 
 def titleize(title, int=1)
-   # word_splitter = title.split(" ")
-   # p word_splitter[0]
-   # p word_splitter[1]
    new_arr = []
    new_sent = ""
-   ignore = ["and", "the", "over"]
    splitter = title.split
-   splitter.each do |ele|
-      # new_sent << ele[0].upcase + ele[1..-1].downcase
-
-         if ele.include?("and") 
+   splitter.map do |ele|
+      if ele.include?("and") || ele.include?("over") || ele.include?("the")
             new_arr << ele.downcase
-         else
+      else
             new_arr << ele.capitalize 
+            if new_arr[0] == "the"
+               new_arr[0] = new_arr[0].capitalize
+            end
          end
-         new_sent = new_arr.join(" ")
-      
-   
-
+      new_sent = new_arr.join(" ")
    end
    return new_sent
-   # p new_arr
-   # p new_arr = Array.new(title)
-   # p new_arr.split(" ")
 end
