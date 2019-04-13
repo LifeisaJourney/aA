@@ -9,12 +9,14 @@ LITTLE_WORDS = [
 
 def titleize(title)
   words = title.split(" ")
-  titleized_words = words.map_with_index do |word, i|
-    unless (idx == 0 && LITTLE_WORDS.include(word))
+  p words
+  titleized_words = words.each_with_index do |word, idx|
+    if (idx == 0 && LITTLE_WORDS.include?(word))
       word.downcase
     else
       word.capitalize
     end
+    p titleized_words
   end
 
   titleized_words.join(" ")
