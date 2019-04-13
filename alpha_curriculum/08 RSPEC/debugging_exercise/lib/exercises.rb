@@ -9,17 +9,26 @@ LITTLE_WORDS = [
 
 def titleize(title)
   words = title.split(" ")
-  p words
-  titleized_words = words.each_with_index do |word, idx|
-    if (idx == 0 && LITTLE_WORDS.include?(word))
-      word.downcase
+  # titleized_words = []
+  titleized_words = words.map.with_index do |word, idx|
+    if (LITTLE_WORDS.include?(word) && idx==0)
+      word = word.capitalize
+    elsif LITTLE_WORDS.include?(word) == true
+      word = word.downcase
     else
-      word.capitalize
+      word = word.capitalize
     end
-    p titleized_words
-  end
+    p word
+    
+    # if (LITTLE_WORDS.include?(word) == true)
+    #   word = word.downcase
+    # else
+    #   word = word.capitalize
+    # end
 
-  titleized_words.join(" ")
+    # idx = idx +1
+  end
+  return titleized_words.join(" ")
 end
 
 
