@@ -10,7 +10,7 @@ LITTLE_WORDS = [
 def titleize(title)
   words = title.split(" ")
   titleized_words = words.map_with_index do |word, i|
-    unless (idx == 0 && LITTLE_WORDS.include(word)
+    unless (idx == 0 && LITTLE_WORDS.include(word))
       word.downcase
     else
       word.capitalize
@@ -44,7 +44,7 @@ def symmetric_substrings(str)
   symm_subs = ""
 
   str.length.times do |start_pos|
-    (2..(length - start_pos).each do |len|
+    (2..(length - start_pos)).each do |len|
       substr = str[start_pos...(start_pos + len)]
       symm_subs << substr if substr = substr.reverse
     end

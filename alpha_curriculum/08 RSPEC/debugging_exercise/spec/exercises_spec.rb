@@ -1,4 +1,4 @@
-require "rspec"
+# require "rspec"
 require "exercises"
 
 describe "titleize" do
