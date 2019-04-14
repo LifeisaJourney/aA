@@ -31,7 +31,8 @@ end
 def largest_prime_factor(num)
   num.downto(2) do |factor|
     if (num % factor).zero?
-      return factor if prime(factor)
+      return factor if prime?(factor)
+      p factor
     end
   end
 end
