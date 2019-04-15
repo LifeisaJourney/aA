@@ -13,6 +13,7 @@ def translate(word)
       new_str << ele[i+1..-1] + ele[i] + "ay"
       next
       i+=1
+      
     #   new_str << ele + "ay"
     # elsif 
     #   new_str << ele[1..-1] + ele[0] + "ay"
