@@ -25,14 +25,17 @@ end
 # Write a method that returns the largest prime factor of a given integer.
 
 def prime?(num)
-  (2..num).none? { |factor| num % factor == 0 }
+  (2..num).none? do 
+    |factor| num % factor == 0 
+  end
 end
 
 def largest_prime_factor(num)
   num.downto(2) do |factor|
     if (num % factor).zero?
       return factor if prime?(factor)
-    elsif ()
+    elsif (num % 5 == 0)
+      return factor
     end
   end
 end
