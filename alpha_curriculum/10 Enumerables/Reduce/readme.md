@@ -105,7 +105,7 @@ With a Block, With an Initial Accumulator
 Let's rewrite three methods from Prep Step 1 using this latest variation of reduce. We'll employ three different initial accumulator arguments: 0 as a counter, an empty string, and an empty array.
 
 In the first practice assessment, we asked you to define a method (e_words(str)) that accepts a string as an argument. This method returns the number of words in the string that end in the letter "e" (e.g., e_words("Let be be finale of seem") => 3). Here's the solution we provided:
-
+```script.js
 def e_words(str)
   words = str.split
   count = 0
@@ -116,8 +116,9 @@ def e_words(str)
 
   count
 end
+```
 Take a moment to study an implementation using reduce:
-
+```script.js
 def e_words(str)
   str.split.reduce(0) do |count, word|
     if word[-1] == "e"
@@ -127,6 +128,7 @@ def e_words(str)
     end
   end
 end
+```
 Using reduce with an initial accumulator reduces defining a counter variable and iterating through a collection to a single method invocation.
 
 In the fifth practice assessment, we asked you to define a method, boolean_to_binary, which accepts an array of booleans as an argument. The method should convert the array into a string of 1's (for true values) and 0's (for false values) and return the result. Here's our solution as well as an implementation using reduce with an empty string as the initial accumulator:
