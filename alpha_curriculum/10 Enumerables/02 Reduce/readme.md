@@ -9,6 +9,7 @@ In every variation, reduce combines all elements of its receiver by applying a b
 
 # With a Symbol
 What do these invocations of reduce do? How do the array's elements contribute to the return value?
+
 ```script.js
 [1, 2].reduce(:+) #=> 3
 [1, 2].reduce(:*) #=> 2
