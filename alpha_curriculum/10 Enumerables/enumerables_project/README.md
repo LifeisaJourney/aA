@@ -8,5 +8,5 @@ Run the specs to test your work:
 
 ```bash
   bundle install
-  bundle exec rspec
+  bundle exec rspec --color --format documentation
 ```
