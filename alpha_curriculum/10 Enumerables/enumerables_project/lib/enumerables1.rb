@@ -3,22 +3,31 @@
 # Define a method that returns an array of only the even numbers in its argument
 # (an array of integers).
 def get_evens(arr)
+  arr.select {|num| num.even? }
 end
 
 # Define a method that returns a new array of all the elements in its argument
 # doubled. This method should *not* modify the original array.
 def calculate_doubles(arr)
+  arr.map {|ele| ele * 2}
 end
 
 # Define a method that returns its argument with all the argument's elements
 # doubled. This method should modify the original array.
 def calculate_doubles!(arr)
+  arr.map! {|ele| ele * 2}
 end
 
 # Define a method that returns the sum of each element in its argument
 # multiplied by its index. array_sum_with_index([2, 9, 7]) => 23 because (2 * 0) +
 # (9 * 1) + (7 * 2) = 0 + 9 + 14 = 23
-def array_sum_with_index(arr)
+def array_sum_with_index(arr) 
+  #need counter, sum and each_with_index
+  sum = 0
+  arr.each_with_index do |ele, i|
+    sum += ele*i 
+  end
+  return sum
 end
 
 # MEDIUM
@@ -27,6 +36,9 @@ end
 # the actual retail price without going over that price. Assume there is always
 # at least one bid below the retail price.
 def price_is_right(bids, actual_retail_price)
+  #return the max value of the bids
+  max_bid = bids.reject {|bid| bid >actual_retail_price}
+  return max_bid.max
 end
 
 # Given an array of numbers, return an array of those numbers that have at least
@@ -35,9 +47,12 @@ end
 # 2, 4, 8, 16) and the others have fewer than five factors. Consider writing a
 # helper method num_factors
 def at_least_n_factors(numbers, n)
+  numbers.select {|number| num_factors(number) >= n }
 end
 
 def num_factors(number)
+  (1..number).count {|num| number % num == 0}
+  #helper function that  can count the amount of divisible 
 end
 
 # HARD

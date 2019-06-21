@@ -8,5 +8,7 @@ Run the specs to test your work:
 
 ```bash
   bundle install
+  bundle exec rspec --color --format documentation spec/file
   bundle exec rspec --color --format documentation
+  bundle exec rspec spec/00_hello_spec.rb:3 
 ```
