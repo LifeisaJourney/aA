@@ -11,4 +11,7 @@ Run the specs to test your work:
   bundle exec rspec --color --format documentation spec/file
   bundle exec rspec --color --format documentation
   bundle exec rspec spec/00_hello_spec.rb:3 
+  bundle exec rspec --color --format documentation spec/enumerables2_spec.rb 
+
+
 ```
