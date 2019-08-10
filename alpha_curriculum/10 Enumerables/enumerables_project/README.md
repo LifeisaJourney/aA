@@ -13,5 +13,11 @@ Run the specs to test your work:
   bundle exec rspec spec/00_hello_spec.rb:3 
   bundle exec rspec --color --format documentation spec/enumerables2_spec.rb 
 
+gem install byebug
+gem install pry
+gem install pry-doc
 
+
+adding debugger would trigger byebug
 ```
+

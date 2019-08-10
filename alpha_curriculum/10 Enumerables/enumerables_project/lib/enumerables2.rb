@@ -5,14 +5,25 @@ require 'byebug'
 # Define a method that returns the sum of all the elements in its argument (an
 # array of numbers).
 def array_sum(arr)
+  sum = 0
+  arr.map do |el|
+    sum += el 
+  end
+  return sum 
 end
 
 # Define a method that returns a boolean indicating whether substring is a
 # substring of each string in the long_strings array.
 # Hint: you may want a sub_tring? helper method
 def in_all_strings?(long_strings, substring)
+  p long_strings
+  p substring
+
 end
 
+def sub_tring?(substring)
+  
+end
 # Define a method that accepts a string of lower case words (no punctuation) and
 # returns an array of letters that occur more than once, sorted alphabetically.
 def non_unique_letters(string)
@@ -72,3 +83,7 @@ end
 
 def repeated_number_ranges(arr)
 end
+
+# if $PROGRAM_NAME == __FILE__
+    
+# end
