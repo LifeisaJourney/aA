@@ -5,6 +5,8 @@ def grid(n, m)
     grid= Array.new(n) {Array.new(m)}
     grid
 end
+#setting it as a block will allow me to change each element individually
+
 
 result_1 = grid(2, 3)
 p result_1              # => [[nil, nil, nil], [nil, nil, nil]]
