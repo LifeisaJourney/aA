@@ -9,9 +9,30 @@
 # to the object_id of the returned array. The exact object_ids you get back don't matter. We just want the ids
 # to be the same before and after calling your method.
 
+#solution below: will modify array if I flatten. Needs refactoring
+def my_rotate!(array, amt)
+    if amt > 0
+        array.push(array.shift(amt))
+    else amt < 0 
+        temp = array.pop(amt.abs)
+        array.unshift(temp)
+    end
+    array
+end
 
 def my_rotate!(array, amt)
-
+    if amt > 0 
+        amt.times do 
+            ele = array.shift
+            array << ele 
+        end
+    else
+        (-amt).times do 
+            ele = array.pop
+            array.unshift(ele)
+        end
+    end
+    array
 end
 
 

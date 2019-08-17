@@ -7,9 +7,24 @@
 # to be the same before and after calling your method.
 
 def scalar_multiple!(array, multiplier)
-
+    array.inject {|acc, el| el * multiplier}
+    array 
 end
 
+def scalar_multiple!(array, multiplier)
+    array.inject(:*)
+    array 
+end
+
+def scalar_multiple!(array, multiplier)
+    array.reduce(:*)
+    array
+end
+
+def scalar_multiple!(array, multiplier)
+    array.map! {|el| el * multiplier}
+    array
+end
 
 array_1 = [7, 0, 4]
 p array_1.object_id                             # => 70326264380840
