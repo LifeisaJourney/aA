@@ -33,5 +33,5 @@ def caesar_cipher(message, n)
                 new_message << char
             end
         end
-    new_message
+   p new_message
 end
