@@ -38,11 +38,11 @@ end
 
 
 def dupe_indices(arr)
-    #generates a new array to store value to that specific [key]
+    #generates a new array to store empty array as value to that specific [key]
     indices = Hash.new { |h, k| h[k] = []}
     
     arr.each_with_index do |ele, i|
-        #references key at specific index
+        #stores specific index at that ele key
         indices[ele]  << i
     end
     indices.select {|k, v| v.length > 1}
