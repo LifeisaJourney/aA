@@ -15,5 +15,5 @@ end
 
 def any_passing_students?(hash)
     #access the key symbol :grades within the hash, then find the average of it
-    hash.any? {|el| p (el[:grades].sum)/(el[:grades].count * 1.0) >= 75}
+    hash.any? {|el| (el[:grades].sum)/(el[:grades].count * 1.0) >= 75}
 end
