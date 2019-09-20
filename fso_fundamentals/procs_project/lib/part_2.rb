@@ -32,15 +32,15 @@ def and_selector(arr, proc_1, proc_2 )
   new_arr
 end
 
-def alternating_mapper(arr, proc_1, proc_2)
+def alternating_mapper(arr, prc_1, prc_2)
   new_arr = []
-  arr.each.with_index do |k, i|
+  arr.each_with_index do |k, i|
     if i == 0 
-      new_arr << proc_1.call(k)
+      new_arr << prc_1.call(k)
     elsif i % 2 == 0 
-      new_arr << proc_1.call(k)
+      new_arr << prc_1.call(k)
     elsif i % 2 == 1
-      new_arr << proc_2.call(k)
+      new_arr << prc_2.call(k)
     end
   end
   new_arr
