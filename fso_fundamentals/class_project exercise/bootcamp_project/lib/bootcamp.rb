@@ -63,7 +63,7 @@ class Bootcamp
   def average_grade(student)
     sum = 0
     average = 0
-    if @grades[student].length > 0
+    if self.enrolled?(student) && self.num_grades(student) > 0
       @grades[student].each do |el| 
         sum += el 
         average = sum/(@grades[student].length) 
