@@ -36,9 +36,58 @@ class Array
     end
   end
     
-  def counts
+  def counts()
     count = Hash.new(0)
     self.each  {|ele| count[ele]+=1}
     count
+  end
+
+  def my_count(arg)
+    num = 0 
+    self.each do |el|
+      if el == arg
+        num+=1
+      end
+    end
+    num
+  end
+
+  def my_index(arg)
+    self.each.with_index do |k, i|
+      if k == arg 
+        return i
+      end
+    end
+    nil
+  end
+
+  def my_uniq
+    #method 1: 
+    # new_arr = []
+    # self.each do |el| 
+    #   if !new_arr.include?(el)
+    #     new_arr << el
+    #   end
+    # end
+    # new_arr
+
+    #method 2: 
+    new_hash = {}
+    self.each do |ele|
+      new_hash[ele] = true
+    end
+  new_hash.keys
+  end
+
+  def my_transpose
+   new_arr = []
+    (0...self.length).each do |el|
+      new_row = []
+      (0...self.length).each do |col|
+        new_row << self[col][el]
+      end
+      new_arr << new_row
+    end
+    new_arr
   end
 end
