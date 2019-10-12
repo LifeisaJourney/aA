@@ -25,8 +25,6 @@ class Room
   end
 
   def add_occupant(string)
-    
-
     if !self.full?
       @occupants << string
       return true
