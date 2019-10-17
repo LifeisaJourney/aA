@@ -54,6 +54,7 @@ class Code
     count = 0
     (0...guess.length).each do |i|
       count += 1 if guess[i] != self[i] && self.pegs.include?(guess[i])
+      #self.pegs and @pegs are the same 
     end
     count
   end
